@@ -1,0 +1,220 @@
+/* Css Reset commands */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css belongs from here */
+
+body{
+    background-color: #e5b3fe;
+}
+
+.heading{
+    font-size: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 10px;
+}
+.description{
+    display: grid;
+    
+    grid-template-columns:50% 50%;
+   
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.clublogo{
+    width: 340px;
+   margin-left: 100px;
+}
+
+.description >span{
+    text-align: left;
+    padding-right: 120px;
+}
+
+span{
+   margin-left: 20px;
+   margin-top: 90px;
+   float: left;
+}
+
+.subheading{
+    font-size: 70px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.communities-logo{
+    display: flex;
+}
+
+.column{
+    flex: 20%;
+    padding: 8px;
+   
+}
+
+#img1{
+    width: 100%;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+#img1:hover,#img1:focus{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#img2{
+    width: 100%;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+
+#img2:hover{
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+
+#img3{
+    width: 100%;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+#img3:hover{
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+
+#img4{
+    width: 100%;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+#img4:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+#img5{
+    width: 100%;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+#img5:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+@media(max-width:780px){
+    .description{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-gap: none;
+    }
+
+    span{
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-top: 20px
+        
+        
+    }
+     .clublogo{
+        width:140px;
+        margin-left: 20px;
+    } 
+    .heading{
+        font-size: 70px;
+    }
+
+    .subheading{
+        font-size: 50px;
+    }
+
+    .communities-logo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #img1,#img2,#img3,#img4,#img5{
+        width: 140px;
+    }
+
+   
+}
+
+@media(max-width:360px){
+
+    .heading{
+        font-size: 50px;
+    }
+
+    .subheading{
+        font-size: 30px;
+    }
+    span{
+        margin-right: 10px;
+    }
+    .communities-logo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #img1,#img2,#img3,#img4,#img5{
+        width: 120px;
+    }
+}
